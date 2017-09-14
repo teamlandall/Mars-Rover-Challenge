@@ -1,0 +1,25 @@
+{
+  "name": "mars-rover-challenge",
+  "version": "1.0.0",
+  "description": "code-challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teamlandall/Mars-Rover-Challenge.git"
+  },
+  "author": "Landall Proctor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/teamlandall/Mars-Rover-Challenge/issues"
+  },
+  "homepage": "https://github.com/teamlandall/Mars-Rover-Challenge#readme",
+  "dependencies": {
+    "mocha": "^3.5.3"
+  },
+  "devDependencies": {
+    "mocha": "^3.5.3"
+  }
+}
