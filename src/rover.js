@@ -64,7 +64,7 @@ function turnRover(dir, turn) {
     return turn === "L" ? "S" : "N";
     break;
  }
- 
+
 };
 
 function moveRoverForward(pos, obstacle) {
@@ -89,7 +89,6 @@ function moveRoverForward(pos, obstacle) {
   }
 
   if (pos.x === obstacle.x && pos.y === obstacle.y) {
-    console.log('Obstacle in path. Unable to continue');
     return; 
   }
 
@@ -119,7 +118,6 @@ function moveRoverBackward(pos, obstacle) {
   }
 
   if (pos.x === obstacle.x && pos.y === obstacle.y) {
-    console.log('Obstacle in path. Unable to continue');
     return;
   }
 
