@@ -3,22 +3,13 @@ var _ = require('lodash');
 /*
   Mars Rover Challenge. 
 
-  Instructions: 
-  - Develop an api that moves a rover around on a grid.
-  - You are given the initial starting point (x,y) of a rover and the direction (N,S,E,W) it is facing.
-  - The rover receives a character array of commands.
-  - Implement commands that move the rover forward/backward (f,b).
-  - Implement commands that turn the rover left/right (l,r).
-  - Implement wrapping from one edge of the grid to another. (planets are spheres after all)
-  - Implement obstacle detection before each move to a new square. If a given sequence of commands encounters an obstacle, the rover   moves up to the last possible point and reports the obstacle.
-
   @params 
   pos = {
     x: number, // x coordinate
     y: number, // y coordinate
     dir: oneOf[N,S,E,W] // cardinal directions
   };
-  input = ["L", "L", "M", "M"] // takes L, R, M. L = left, R = right, M = move 1 space. 
+  input = ["L", "L", "F", "B"] // takes L, R, F, B. L = left, R = right, F = move 1 space forwrad, B = move 1 space backward. 
   obstacle = {
     x: number, // x coordinate of obstacle
     y: number, // y coordinate of obstacle
@@ -40,7 +31,7 @@ function rover(pos, input, obstacle) {
     }
 
   }
-  
+
   return pos ? pos : "Obstacle detected. Unable to continue.";
 
 };
