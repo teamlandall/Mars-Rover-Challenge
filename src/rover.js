@@ -40,7 +40,7 @@ function rover(pos, input, obstacle) {
     }
 
   }
-  console.log('final pos: ', pos);
+  
   return pos ? pos : "Obstacle detected. Unable to continue.";
 
 };
